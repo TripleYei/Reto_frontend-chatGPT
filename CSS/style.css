@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* HERO SECTION */
+.hero {
+  background: linear-gradient(135deg, #8e2de2, #ff6ec4);
+  color: white;
+  padding: 47px 60px;
+}
+
+/* HEADER */
+.logo {
+  width: 140px;
+}
+
+/* CONTENT */
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 40px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta {
+  background: white;
+  color: #8e2de2;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #f2f2f2;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* SOCIAL ICONS */
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.socials i {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  background: white;
+  color: #8e2de2;
+}
+
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 900px) {
+  .hero {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+}
